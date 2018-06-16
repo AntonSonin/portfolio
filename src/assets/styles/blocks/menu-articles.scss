@@ -1,0 +1,33 @@
+.menu-articles {
+
+    &__item {
+        margin-bottom: 30px;
+        text-align: right;
+
+        position: relative;
+    }
+
+    &__link {
+        color: $grey;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            color: $green;
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+
+.menu-articles__item--active {
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 100%;
+        top: 0;
+        right: -20px;
+        background-color: $green;
+    }
+}

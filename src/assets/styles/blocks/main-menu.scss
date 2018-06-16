@@ -1,0 +1,33 @@
+.main-menu {
+    background-color: $green;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        line-height: 45px;
+        position: relative;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        padding: 13px 32px;
+
+        &:hover,
+        &:active {
+            background-color: $green-dark;
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+
+.main-menu__item:not(:last-child) {
+    border-right: 1px solid #ccc;
+}

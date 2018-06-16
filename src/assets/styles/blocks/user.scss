@@ -1,0 +1,74 @@
+.user {
+    text-align: center;
+
+    &__img {
+        display: inline-block;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__img-pic {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    &__desc {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    &__name {
+        font-size: 35px;
+        text-align: center;
+
+    }
+
+    &__info {
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.user-wrap {
+    margin: auto;
+
+    background-color: #fff;
+    opacity: 0.85;
+    border-radius: 5px;
+
+    text-align: center;
+    padding-top: 40px;
+
+    color: #000;
+}
+
+.user__wrap-links {
+    width: 40%;
+    margin: 0 auto;
+
+    margin-bottom: 40px;
+}
+
+.user__decs--black {
+    color: #000;
+}
+
+
+.user-desc__image {
+    text-align: center;
+}
+
+.user-desc__avatar {
+    width: 444px;
+    min-height: 390px;
+}
+
+.user-desc__title {
+    width: 40%;
+    margin: 0 auto;
+
+    margin-bottom: 30px;
+}

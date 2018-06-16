@@ -1,0 +1,36 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider__active-screen {
+    display: flex;
+
+}
+
+.slider__img-wrap {
+    width: 450px;
+    height: 300px;
+    background: url("assets/images/work-1.png") no-repeat center;
+    margin: auto;
+}
+
+.slider-prev {
+    width: 100%;
+}
+
+
+.slider-prev__down {
+    width: 275px;
+    height: 180px;
+    height: auto;
+    background: url("assets/images/work-2.png") no-repeat center;
+}
+
+.slider-prev__up {
+    height: auto;
+    width: 275px;
+    height: 180px;
+    background: url("assets/images/work-3.png") no-repeat center;
+}
