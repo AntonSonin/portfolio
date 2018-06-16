@@ -19,7 +19,7 @@
         background-color: #eeebdf;
     }
 }
-//- здесь должна быть полупрозрачная подложка под аватар в виде созвездия
+
 .about__left-title {
     display: flex;
     background: url('assets/images/about_header.png') no-repeat center;
@@ -33,8 +33,7 @@
     font-family: 'bernier', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 63px;
-    color: $dark-grey;
-
+    color: #363E41;
     margin: auto;
     padding-bottom: 40px;
 }
