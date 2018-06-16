@@ -8,15 +8,9 @@ block scripts
 
 block content
   section.hero
-    -
-      var socials = [
-        ['vk', 'https://vk.com/sonin_anton'],
-        ['gh', 'https://github.com/AntonSonin'],
-        ['in', '']
-      ]
-  .hero__links
+   .hero__links
     ul.socials
-      each item in socials
+      each item in ['vk', 'gh', 'in']
         li.socials__item
           a(href=`${item[0]}`).socials__link
             +icon(item[1], 'socials__link-icon')
@@ -31,8 +25,8 @@ block content
         .user__pic
           img.user__pic-img
         .user__description
-          .user__name Владимир Астахов
-          .user__info Личный сайт разработчика
+          .user__name Антон Сонин
+          .user__info Личный сайт веб-разработчика
 
     a(href="").down-btn.hero__down-btns
 

@@ -5,9 +5,35 @@ mixin icon(iconName, iconClass)
 mixin image(imagePath, imageAlt, imageClass)
   img(src=`/assets/images/${imagePath}`, alt=`${imageAlt}`, class=`${imageClass}`)
 
+mixin list(className, items, activeItem)
+  ul(class=`${className}__list`)
+    each item, ndx in items
+      li(class=`${className}__item` + ( (ndx === activeItem) ? ` ${className}__item--active` : '') )
+        a(class=`${className}__link` href="#")= item
+
+
+mixin nav(className, items, activeItem)
+  nav(class=`${className}`)
+    ul(class=`${className}__list`)
+      each item in items
+        li(class=`${className}__item`)
+          a(class=`${className}__link` href="#")= item
+
+
 mixin socials(socials, modClass)
   ul.socials(class=`${modClass}`)
     each item in socials
       li.socials__item
         a(href=`${item[0]}`).socials__link
           +icon(item[1], 'socials__link-icon')
+
+mixin triangles(className)
+  div(class=className)
+    svg(viewBox='0 0 1000 110' preservAspectRatio='none').triangles__svg
+      polygon(points='0,0 0,110, 500,110').triangles__svg-left
+      polygon(points='500,110 1000,0, 1000,110').triangles__svg-right
+
+mixin triangleLeft(className)
+  div(class=className)
+    svg(viewBox='0 0 1000 110' preservAspectRatio='none' class=`${className}__svg`)
+        polygon(points='0,0 0,110, 500,110')
